@@ -1,0 +1,7 @@
+To stop all running containers 
+
+docker container stop $(docker container ls -aq)
+
+Once all containers are stopped, you can remove them using
+
+docker container rm $(docker container ls -aq)
